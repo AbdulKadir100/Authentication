@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="#FFF"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:padding="8dp"
+        android:background="@drawable/edit_shape"
+        android:layout_marginTop="25dp"
+        android:inputType="textPersonName"
+        android:id="@+id/user"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:padding="8dp"
+        android:background="@drawable/edit_shape"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="25dp"
+        android:id="@+id/email"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:padding="8dp"
+        android:background="@drawable/edit_shape"
+        android:inputType="textPassword"
+        android:layout_marginTop="25dp"
+        android:id="@+id/password"/>
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:background="@drawable/btn_shape"
+        android:textColor="#FFF"
+        android:textSize="19dp"
+        android:layout_marginTop="40dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have signUp, Sign In"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="50dp"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/progressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorPrimary"
+        android:visibility="invisible"/>
+
+
+
+</LinearLayout>
